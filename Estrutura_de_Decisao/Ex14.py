@@ -12,9 +12,6 @@ O algoritmo deve mostrar na tela as notas, a média, o conceito correspondente e
 ou “REPROVADO” se o conceito for D ou E.
 '''
 
-from tkinter import E
-
-
 nota1 = input('Digite o valor da primeira nota: ')
 nota2 = input('Digite o valor da segunda nota: ')
 
