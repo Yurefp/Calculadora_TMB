@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Novo login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+<br>
+<br>
+<br>
+<div class="quadrado">
+    <h1>Crie sua conta</h1>
+    <!--Fomulario para o usuario colocar as informaçãos do login que deseja criar-->
+    <form action="/registrar" method="post">
+
+        Digite seu email: <input type="email" name="email"><br>
+        Diga seu nome: <input type="text" name="nome"><br>
+        Mês e ano de nascimento: <input type="month" name="nascimento" min={{mini}} max={{maxi}}><br>
+        Escolha uma senha: <input type="password" name="senha1"><br>
+        Digite a senha novamente: <input type="password" name="senha2"><br>
+        
+        <input type="submit" value="Criar">
+
+        {{erro}}
+        
+    </form>
+</div>
+</body>
+</html>

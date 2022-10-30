@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular TMB</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <h2>O que é metabolismo basal afinal?</h2>
+    <p>A quantidade de energia(em kcal) necessária a ser consumida para manter seu corpo funcionando com todas as funções vitais saudáveis.</p>
+    <div class="quadrado">
+        <form action="/calcular" method="post">
+            <h1>Olá, {{nome}}</h1>
+
+            Homem: <input type="radio" name="sexo" value="h" CHECKED/>
+            Mulher: <input type="radio" name="sexo" value="m"/><br>
+
+            Peso [Kg]: <input type="number" name="peso" min="0"><br>
+            Altura [cm]: <input type="number" name="altura" min="0"><br>
+            
+            <label for="atv">Nível de Atividade:</label>
+                <select name="atv">
+                    <option value="sedentario">Sedentário</option>
+                    <option value="leve">Leve</option>
+                    <option value="moderado">Moderado</option>
+                    <option value="alto">Alto</option>
+                    <option value="extremo">Extremo</option>
+                </select>
+
+            <input type="submit" value="Calcular"><br>
+
+            Taxa Metabólica Basal estimada: {{tbme}}
+
+            <fieldset>
+                <legend>Informções da medição:</legend>
+                <ul>
+                    <li>Sexo: {{}}</li>
+                    <li>Peso: {{}}</li>
+                    <li>Altura: {{}}</li>
+                    <li>Nível de atividade: {{}}</li>
+                </ul>
+            </fieldset>
+            
+        </form>
+    </div>
+</body>
+</html>
