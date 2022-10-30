@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcular TMB</title>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     <h1>Calculadora</h1>
@@ -31,8 +36,93 @@
 
             <input type="submit" value="Calcular"><br>
 
-            Taxa Metabólica Basal estimada: {{tbme}}
+            Taxa Metabólica Basal estimada: {{tbme}} <br>
             
+            Quantidade de kcal que devem ser consumidas para:<br>
+            
+            <ul>
+                <li>Perder peso: {{pp}}</li>
+                <li>Ganhar peso: {{gp}}</li>
+            </ul>
+
+            <table>
+                <tr>
+                  <th>Alimento</th>
+                  <th>Quantidade</th>
+                  <th>Valor calorico [kcal]</th>
+                </tr>
+                <tr>
+                    <td>Aveia</td>
+                    <td>100g</td>
+                    <td>246</td>
+                </tr>
+                <tr>
+                  <td>Arroz</td>
+                  <td>100g</td>
+                  <td>130</td>
+                </tr>
+                <tr>
+                  <td>Batata doce</td>
+                  <td>100g</td>
+                  <td>77</td>
+                </tr>
+                <tr>
+                  <td>Batata inglesa</td>
+                  <td>100g</td>
+                  <td>86</td>
+                </tr>
+                <tr>
+                  <td>Banana</td>
+                  <td>1 un.</td>
+                  <td>40</td>
+                </tr>
+                <tr>
+                  <td>Carne bovina</td>
+                  <td>100g</td>
+                  <td>135</td>
+                </tr>
+                <tr>
+                  <td>Feijão</td>
+                  <td>100g</td>
+                  <td>77</td>
+                </tr>
+                <tr>
+                  <td>Frango</td>
+                  <td>100g</td>
+                  <td>160</td>
+                </tr>
+                <tr>
+                  <td>Leite</td>
+                  <td>100ml</td>
+                  <td>44</td>
+                </tr>
+                <tr>
+                  <td>Macarrão</td>
+                  <td>100g</td>
+                  <td>124</td>
+                </tr>
+                <tr>
+                  <td>Ovo</td>
+                  <td>1 un.</td>
+                  <td>120</td>
+                </tr>
+                <tr>
+                  <td>Pão francês</td>
+                  <td>1 un.</td>
+                  <td>155</td>
+                </tr>
+                <tr>
+                  <td>Tapioca</td>
+                  <td>100g</td>
+                  <td>240</td>
+                </tr>
+                <tr>
+                  <td>Tilápia</td>
+                  <td>100g</td>
+                  <td>96</td>
+                </tr>
+            </table>
+
         </form>
     </div>
 </body>

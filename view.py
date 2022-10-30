@@ -158,9 +158,12 @@ def calcular():
 
         tbm = calculadora(atv, peso, altura, sexo, anos)
 
+        pp = tbm - 500
+        gp = tbm + 500
+
         tbm = str(tbm)+" kcal"
 
-        return render_template("calcula.html", tbme = tbm, nome = user.nome())
+        return render_template("calcula.html", tbme = tbm, nome = user.nome(), pp = pp, gp = gp)
 
 
 
