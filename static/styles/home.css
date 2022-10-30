@@ -1,0 +1,41 @@
+body {
+    background-color: lightblue;
+    background-repeat: repeat-x;
+    font-family: American Typewriter, serif;
+    font-size: 20px;
+    text-align: center;
+        
+}
+
+.quadrado {
+    width:500px;
+    height:300px;
+    border: 2px solid; 
+    border-color: blue;
+    background-color: rgba(136, 181, 196, 0.778);
+    font-family:American Typewriter, serif;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 200;
+}
+p {
+    font-size: 25px;
+    line-height: 0px;
+}
+p1 {
+    line-height: 0px;
+    font-size: 22px;
+}
+input, button {
+    background: transparent;
+    border-width: 1px;
+}
+button {
+    width: 100px; 
+    font-size: 14px;
+}

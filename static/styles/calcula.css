@@ -1,0 +1,30 @@
+body {
+    background-color: lightblue;
+    background-repeat: repeat-x;
+    font-family: American Typewrite, serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    margin: auto;
+    }
+input{
+    background: transparent;
+    border-width: 1px;
+}
+option value {
+    background: transparent;
+}
+
+.quadrado {
+    line-height: 40px;
+    width:400px;
+    height:300px;
+    border: 2px solid; 
+    border-color: blue;
+    background-color: rgba(136, 181, 196, 0.778);
+    /*border-start-start-radius: center;*/ 
+    font-family:Times;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+}

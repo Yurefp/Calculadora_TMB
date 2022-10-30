@@ -1,0 +1,23 @@
+body {
+    background-color: lightblue;
+    background-repeat: repeat-x;
+    font-family:American Typewriter, serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+.quadrado {
+    width:500px;
+    height:400px;
+    border: 2px solid; 
+    border-color: blue;
+    background-color: rgba(136, 181, 196, 0.778);
+    font-family:Times;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+}
+input{
+    background: transparent;
+    border-width: 1px;
+}
