@@ -22,8 +22,8 @@
             Homem: <input type="radio" name="sexo" value="h" CHECKED/>
             Mulher: <input type="radio" name="sexo" value="m"/><br>
 
-            Peso [Kg]: <input type="number" name="peso" min="0"><br>
-            Altura [cm]: <input type="number" name="altura" min="0"><br>
+            Peso [Kg]: <input type="number" name="peso" min="0" required><br>
+            Altura [cm]: <input type="number" name="altura" min="0" required><br>
             
             <label for="atv">Nível de Atividade:</label>
                 <select name="atv">
@@ -39,7 +39,7 @@
             Taxa Metabólica Basal estimada: {{tbme}} <br>
             
             Quantidade de kcal que devem ser consumidas para:<br>
-            
+
             <ul>
                 <li>Perder peso: {{pp}}</li>
                 <li>Ganhar peso: {{gp}}</li>
