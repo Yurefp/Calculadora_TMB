@@ -159,7 +159,7 @@ def calcular():
         tbm = calculadora(atv, peso, altura, sexo, anos)
 
         pp = tbm - 500
-        gp = tbm + 500
+        gp = tbm + 50
 
         tbm = str(tbm)+" kcal"
 
