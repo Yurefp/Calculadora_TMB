@@ -9,25 +9,24 @@
     <link rel="shortcut icon" href="static\img\icone.png" type="image/x-icon">
 </head>
 <body>
-<br>
-<br>
-<br>
-<div class="quadrado">
+    <br>    
     <h1>Crie sua conta</h1>
-    <!--Fomulario para o usuario colocar as informaçãos do login que deseja criar-->
-    <form action="/registrar" method="post">
+    <br>
+    <div class="quadrado">
+        <!--Fomulario para o usuario colocar as informaçãos do login que deseja criar-->
+        <form action="/registrar" method="post">
 
-        Digite seu email: <input type="email" name="email" required><br>
-        Diga seu nome: <input type="text" name="nome" required><br>
-        Mês e ano de nascimento: <input type="month" name="nascimento" min={{mini}} max={{maxi}} required><br>
-        Escolha uma senha: <input type="password" name="senha1" required><br>
-        Digite a senha novamente: <input type="password" name="senha2" required><br>
-        
-        <input type="submit" value="Criar">
+            Digite seu email: <input type="email" name="email" required; autofocus><br>
+            Diga seu nome: <input type="text" name="nome" required><br>
+            Mês e ano de nascimento: <input type="month" name="nascimento" min={{mini}} max={{maxi}} required><br>
+            Escolha uma senha: <input type="password"  name="senha1" class="senha1" required><br>
+            Digite a senha novamente: <input type="password" name="senha2" required><br>
+            
+            <input type="submit" value="Criar">
 
-        {{erro}}
-        
-    </form>
-</div>
+            {{erro}}
+            
+        </form>
+    </div>
 </body>
 </html>
