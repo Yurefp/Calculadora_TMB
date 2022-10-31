@@ -1,3 +1,4 @@
+'''Função para calcular a taxa de metabolismo basal'''
 def calculadora(atv, peso, altura, sexo, anos):
 
     if(atv == 'sedentario'):

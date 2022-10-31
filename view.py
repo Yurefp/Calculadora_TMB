@@ -8,6 +8,7 @@ from calcula import *
 app = Flask(__name__)
 
 
+'''Classe global para salvar as informações do usuario logado para utilizalas em qualquer outra função'''
 class usuario():
     def nome(self):
         return self.nom
@@ -126,6 +127,7 @@ def login(email, senha):
             peganasc = c.execute("SELECT nascimento FROM user where email = '"+email+"'").fetchall()
             nasc = str(peganasc)
 
+            '''Salva as informações fornecidas pelo usuario no resgistro em uma classe global para disponibilizalas para uso em outras funções'''
             user.set_nome(nome)
             user.set_email(email)
             user.set_senha(senha)
@@ -141,7 +143,7 @@ def login(email, senha):
         raise 
 
 
-
+'''Função que recebe os valores para o calculo e chama a operação'''
 @app.route("/calcular", methods =["POST"])
 def calcular():
 

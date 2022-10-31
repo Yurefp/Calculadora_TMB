@@ -1,5 +1,6 @@
 from datetime import datetime
 
+'''Função para determinar o valor minimo da date permitida no registro, sendo esse de 100 antes do mês de quando o programa é rodado'''
 def min():
 
     hoje = datetime.now()
@@ -18,7 +19,8 @@ def min():
 
     return datamin
 
-    
+
+'''Função para determinar o valor máximo da date permitida no registro, sendo esse de 100 antes do mês de quando o programa é rodado'''
 def max():
     hoje = datetime.now()
     anohj = hoje.year
@@ -34,6 +36,8 @@ def max():
 
     return datamax
 
+
+'''Função para determina a idade do ususario com base no mes e ano informados por ele no registro'''
 def idade(nasc):
     hoje = datetime.now()
     anonasc = nasc[:4]
